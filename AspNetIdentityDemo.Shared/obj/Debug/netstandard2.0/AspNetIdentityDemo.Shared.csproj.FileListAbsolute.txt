@@ -1,0 +1,9 @@
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\AspNetIdentityDemo.Shared.deps.json
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\AspNetIdentityDemo.Shared.dll
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\AspNetIdentityDemo.Shared.pdb
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.csprojAssemblyReference.cache
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.AssemblyInfo.cs
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.dll
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.pdb
