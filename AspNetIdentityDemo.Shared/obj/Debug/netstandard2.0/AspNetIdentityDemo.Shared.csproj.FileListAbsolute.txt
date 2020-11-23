@@ -7,3 +7,6 @@ C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debu
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.dll
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.pdb
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Shared\obj\Debug\netstandard2.0\AspNetIdentityDemo.Shared.csproj.CopyComplete

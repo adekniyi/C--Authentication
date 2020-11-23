@@ -1908,6 +1908,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "AspNetIdentityDemo.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/AspNetIdentityDemo.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AspNetIdentityDemo.Shared.dll": {}
+        }
       }
     }
   },
@@ -6632,10 +6642,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "AspNetIdentityDemo.Shared/1.0.0": {
+      "type": "project",
+      "path": "../AspNetIdentityDemo.Shared/AspNetIdentityDemo.Shared.csproj",
+      "msbuildProject": "../AspNetIdentityDemo.Shared/AspNetIdentityDemo.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AspNetIdentityDemo.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.0",
@@ -6670,7 +6686,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\source\\repos\\AspNetIdentityDemo\\AspNetIdentityDemo.Shared\\AspNetIdentityDemo.Shared.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\AspNetIdentityDemo\\AspNetIdentityDemo.Shared\\AspNetIdentityDemo.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -67,3 +67,5 @@ C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Api\obj\Debug\n
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Api\obj\Debug\netcoreapp3.1\AspNetIdentityDemo.Api.dll
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Api\obj\Debug\netcoreapp3.1\AspNetIdentityDemo.Api.pdb
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Api\obj\Debug\netcoreapp3.1\AspNetIdentityDemo.Api.genruntimeconfig.cache
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Api\bin\Debug\netcoreapp3.1\AspNetIdentityDemo.Shared.dll
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Api\bin\Debug\netcoreapp3.1\AspNetIdentityDemo.Shared.pdb

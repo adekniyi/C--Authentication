@@ -20,5 +20,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetIdentityDemo.Shared\AspNetIdentityDemo.Shared.csproj" />
+  </ItemGroup>
+
 
 </Project>

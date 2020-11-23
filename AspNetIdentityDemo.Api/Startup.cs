@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AspNetIdentityDemo.Api.Models;
+using AspNetIdentityDemo.Api.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -59,6 +60,8 @@ namespace AspNetIdentityDemo.Api
                     ValidateAudience = false
                 };
             });
+
+            services.AddScoped<IUserServices, UserServices>();
 
             services.AddControllers();
 

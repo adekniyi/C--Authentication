@@ -1,0 +1,1 @@
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\AspNetIdentityDemo.Client.csproj;x86
