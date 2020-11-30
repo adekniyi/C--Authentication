@@ -24,13 +24,14 @@ namespace AspNetIdentityDemo.Api.Services
     {
         private UserManager<IdentityUser> _userManager;
         private IConfiguration _configuration;
-
+        private IMailService _mailService;
         public object WebEncoder { get; private set; }
 
-        public UserServices(UserManager<IdentityUser> userManager, IConfiguration configuration)
+        public UserServices(UserManager<IdentityUser> userManager, IConfiguration configuration, IMailService mailService)
         {
             _userManager = userManager;
             _configuration = configuration;
+            _mailService = mailService;
         }
 
 
@@ -63,6 +64,9 @@ namespace AspNetIdentityDemo.Api.Services
                 var confirmEmailToken = await _userManager.GenerateEmailConfirmationTokenAsync(identityUser);
                 var encondedEmailToken = Encoding.UTF8.GetBytes(confirmEmailToken);
                 var validEmailToken = WebEncoders.Base64UrlEncode(encondedEmailToken);
+                string url = $"{_configuration["AppUrl"]}/api/auth/confirmemail?userid={identityUser.Id}&token={validEmailToken}";
+
+                await _mailService.SendMailAsync(identityUser.Email, "Confirm your Email Address", "<h1>Welcome to Auth Demo</h1>" + $"<p>Pls Confirm your Email by <a href='{url}'>Clicking here</a> </p>");
 
                 return new UserManagerResponse
                 {
@@ -126,9 +130,37 @@ namespace AspNetIdentityDemo.Api.Services
             };
         }
 
-        public Task<UserManagerResponse> ConfirmEmailAsync(string userid, string token)
+        public async Task<UserManagerResponse> ConfirmEmailAsync(string userid, string token)
         {
-            return null;
+            var user = await _userManager.FindByIdAsync(userid);
+            if(user == null)
+            {
+                return new UserManagerResponse
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                };
+            }
+
+            var decodedToken = WebEncoders.Base64UrlDecode(token);
+            string normalToken = Encoding.UTF8.GetString(decodedToken);
+
+            var result = await _userManager.ConfirmEmailAsync(user, normalToken);
+
+            if(result.Succeeded)
+            {
+                return new UserManagerResponse
+                {
+                    IsSuccess = true,
+                    Message = "Email Confirmed successfully"
+                };
+            }
+
+            return new UserManagerResponse
+            {
+                IsSuccess = false,
+                Message = "Email Can not be Confirmed"
+            };
         }
     }
 }

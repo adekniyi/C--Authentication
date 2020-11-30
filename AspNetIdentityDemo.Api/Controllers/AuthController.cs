@@ -6,6 +6,7 @@ using AspNetIdentityDemo.Api.Services;
 using AspNetIdentityDemo.Shared;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace AspNetIdentityDemo.Api.Controllers
 {
@@ -15,11 +16,13 @@ namespace AspNetIdentityDemo.Api.Controllers
     {
         private IUserServices _userService;
         private IMailService _mailService;
+        private IConfiguration _configuration;
 
-        public AuthController(IUserServices userService, IMailService mailService)
+        public AuthController(IUserServices userService, IMailService mailService, IConfiguration configuration)
         {
             _userService = userService;
             _mailService = mailService;
+            _configuration = configuration;
         }
 
         [HttpPost("Register")]
@@ -45,7 +48,6 @@ namespace AspNetIdentityDemo.Api.Controllers
 
         [HttpPost]
         [Route("Login")]
-
         public async Task<IActionResult> LoginAsync([FromBody] LoginViewModel model)
         {
             if (ModelState.IsValid)
@@ -62,6 +64,25 @@ namespace AspNetIdentityDemo.Api.Controllers
             }
 
             return BadRequest("Some Properties are not valid");
+        }
+
+        [HttpGet]
+        [Route("confirmemail")]
+        public async Task<IActionResult> ConfirmEmail(string userid, string token)
+        {
+            if(string.IsNullOrWhiteSpace(userid)||string.IsNullOrWhiteSpace(token))
+            {
+                return NotFound();
+            }
+
+            var result = await _userService.ConfirmEmailAsync(userid, token);
+
+            if(result.IsSuccess)
+            {
+                return Redirect($"{_configuration["AppUrl"]}/ConfirmEmail.html");
+            }
+
+            return BadRequest(result);
         }
     }
 }
