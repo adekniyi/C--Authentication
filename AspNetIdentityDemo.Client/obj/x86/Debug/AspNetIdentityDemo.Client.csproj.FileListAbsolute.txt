@@ -51,3 +51,8 @@ C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\obj\x86\
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\bin\x86\Debug\Login.xbf
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\obj\x86\Debug\Login.g.i.cs
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\obj\x86\Debug\Login.g.cs
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\obj\x86\Debug\Login.xaml
+C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\obj\x86\Debug\Login.xbf

@@ -76,6 +76,9 @@
     <AppxPackagedFile Include="C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\bin\x86\Debug\Login.xbf">
+      <PackagePath>Login.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\AspNetIdentityDemo\AspNetIdentityDemo.Client\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>

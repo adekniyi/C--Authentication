@@ -54,7 +54,7 @@ namespace AspNetIdentityDemo.Api
                 options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("This is the key that we will use in encrypting")),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["AuthSettings:Key"])),
                     RequireExpirationTime = true,
                     ValidateIssuer = false,
                     ValidateAudience = false
@@ -62,6 +62,7 @@ namespace AspNetIdentityDemo.Api
             });
 
             services.AddScoped<IUserServices, UserServices>();
+            services.AddTransient<IMailService, MailService>();
 
             services.AddControllers();
 
@@ -78,6 +79,8 @@ namespace AspNetIdentityDemo.Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

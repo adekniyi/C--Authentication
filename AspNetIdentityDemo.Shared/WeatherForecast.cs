@@ -1,6 +1,8 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace AspNetIdentityDemo.Api
+namespace AspNetIdentityDemo.Shared
 {
     public class WeatherForecast
     {
